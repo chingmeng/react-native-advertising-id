@@ -54,7 +54,7 @@ Consistent access to Advertising Id (AAID/GAID and IDFA) for Android and iOS on 
     <application>
     <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-3940256099942544~3347511713"/> // This is sample-id for testing only, don't use it in PRODUCTION!!! You will get banned for life!
     </application>
 </manifest>
 
