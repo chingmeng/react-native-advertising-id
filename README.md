@@ -9,10 +9,10 @@ Consistent access to Advertising Id (AAID/GAID and IDFA) for Android and iOS on 
 - [react-native-advertising-id](#react-native-advertising-id)
   - [TOC](#toc)
   - [Getting started](#getting-started)
-    - [Mostly automatic installation](#mostly-automatic-installation)
-    - [Manual installation](#manual-installation)
+    - [Manual installation (If auto-linking not available)](#manual-installation-if-auto-linking-not-available)
       - [iOS](#ios)
       - [Android](#android)
+      - [Post Installation](#post-installation)
   - [Usage](#usage)
     - [OTHERS ISSUES](#others-issues)
 
@@ -20,14 +20,11 @@ Consistent access to Advertising Id (AAID/GAID and IDFA) for Android and iOS on 
 
 `$ npm install react-native-advertising-id --save`
 
-### Mostly automatic installation
+`$ react-native link react-native-advertising-id` // If you are under RN 0.60.0 below where auto-linking not born yet.
 
-`$ react-native link react-native-advertising-id`
+### Manual installation (If auto-linking not available)
 
-### Manual installation
-
-
-#### iOS
+#### iOS 
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
 2. Go to `node_modules` ➜ `react-native-advertising-id` and add `RNAdvertisingId.xcodeproj`
@@ -48,7 +45,9 @@ Consistent access to Advertising Id (AAID/GAID and IDFA) for Android and iOS on 
     ```gradle
       compile project(':react-native-advertising-id')
     ```
-4. Update your `mainfest.xml` and add in your Admob app id (Yes, for later version, you need admob app id):
+
+#### Post Installation
+ Update your `mainfest.xml` and add in your Admob app id (Yes, for later version, you need admob app id):
 ```xml
 <manifest>
     <application>
