@@ -1,20 +1,7 @@
 
-# react-native-advertising-id
-[![npm version](https://badge.fury.io/js/react-native-advertising-id.svg)](https://badge.fury.io/js/react-native-advertising-id)
+
 
 Consistent access to Advertising Id (AAID/GAID and IDFA) for Android and iOS on React Native.
-
-## TOC
-
-- [react-native-advertising-id](#react-native-advertising-id)
-  - [TOC](#toc)
-  - [Getting started](#getting-started)
-    - [Manual installation (If auto-linking not available)](#manual-installation-if-auto-linking-not-available)
-      - [iOS](#ios)
-      - [Android](#android)
-      - [Post Installation](#post-installation)
-  - [Usage](#usage)
-    - [OTHERS ISSUES](#others-issues)
 
 ## Getting started
 
@@ -43,7 +30,7 @@ Consistent access to Advertising Id (AAID/GAID and IDFA) for Android and iOS on 
     ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
     ```gradle
-      compile project(':react-native-advertising-id')
+      implementation project(':react-native-advertising-id')
     ```
 
 #### Post Installation
@@ -77,4 +64,5 @@ import RNAdvertisingId from 'react-native-advertising-id';
   
 ### OTHERS ISSUES
 
+Android 12 - On launch crashing, see this thread for solution:
 https://groups.google.com/g/google-admob-ads-sdk/c/fmbPnkUCIe8
