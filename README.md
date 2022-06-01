@@ -14,6 +14,7 @@ Consistent access to Advertising Id (AAID/GAID and IDFA) for Android and iOS on 
       - [iOS](#ios)
       - [Android](#android)
   - [Usage](#usage)
+    - [OTHERS ISSUES](#others-issues)
 
 ## Getting started
 
@@ -47,7 +48,7 @@ Consistent access to Advertising Id (AAID/GAID and IDFA) for Android and iOS on 
     ```gradle
       compile project(':react-native-advertising-id')
     ```
-4. Update your `mainfest.xml` and add in your Admob app id:
+4. Update your `mainfest.xml` and add in your Admob app id (Yes, for later version, you need admob app id):
 ```xml
 <manifest>
     <application>
@@ -75,3 +76,6 @@ import RNAdvertisingId from 'react-native-advertising-id';
     .catch(error => console.error(error));
 ```
   
+### OTHERS ISSUES
+
+https://groups.google.com/g/google-admob-ads-sdk/c/fmbPnkUCIe8
