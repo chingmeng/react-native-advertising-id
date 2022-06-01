@@ -6,11 +6,14 @@ Consistent access to Advertising Id (AAID/GAID and IDFA) for Android and iOS on 
 
 ## TOC
 
-* [Getting started](#getting-started)
-  * [Automatic Linking](#mostly-automatic-installation)
-  * [Manual Linking - iOS](#ios)
-  * [Manual Linking - Android](#android)
-* [Usage](#usage)
+- [react-native-advertising-id](#react-native-advertising-id)
+  - [TOC](#toc)
+  - [Getting started](#getting-started)
+    - [Mostly automatic installation](#mostly-automatic-installation)
+    - [Manual installation](#manual-installation)
+      - [iOS](#ios)
+      - [Android](#android)
+  - [Usage](#usage)
 
 ## Getting started
 
@@ -44,15 +47,16 @@ Consistent access to Advertising Id (AAID/GAID and IDFA) for Android and iOS on 
     ```gradle
       compile project(':react-native-advertising-id')
     ```
-4. Update your `mainfest.xml` and declare that your app is an Ad Manager app, as instructed on [Google's Ad Manager guide](https://developers.google.com/ad-manager/mobile-ads-sdk/android/quick-start#update_your_androidmanifestxml):
+4. Update your `mainfest.xml` and add in your Admob app id:
 ```xml
 <manifest>
     <application>
-        <meta-data
-            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
-            android:value="true"/>
+    <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
     </application>
 </manifest>
+
 ```
 
 ## Usage

@@ -17,7 +17,7 @@ android {
     buildToolsVersion '30.0.2'
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 31
         versionCode 1
         versionName "1.1"
@@ -44,5 +44,11 @@ allprojects {
 
 dependencies {
     implementation 'com.facebook.react:react-native:0.20.1'
-    implementation 'com.google.android.gms:play-services-ads:20.3.0'
+    implementation 'com.google.android.gms:play-services-ads:20.4.0' //19.4.0 latest workable without admob
+    // For apps targeting Android 12, add WorkManager dependency. 
+    constraints { 
+        implementation('androidx.work:work-runtime:2.7.0') 
+    }
+    implementation 'com.google.android.gms:play-services-measurement:17.0.0'
+    implementation 'com.google.android.gms:play-services-measurement-sdk:17.0.0'
 }
